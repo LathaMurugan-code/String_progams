@@ -16,6 +16,20 @@ public class StringSplit {
 	public void performSplit(String s)
 	{
 		
+		char c[]= s.toCharArray();
+		String [] result;
+		int j=0;
+		for(int i=0;i<s.length();i++)
+		{
+			if(c[i]!= '/')
+			{ 
+				String v =String.valueOf(c);
+				
+			}
+			else
+			result[j]= v;
+					
+		
 		
 	}
 
