@@ -5,7 +5,7 @@ public class SortString {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		SortString d =new SortString();
-		d.sort("maagash");
+		d.sort("Latha");
 
 	}
 
@@ -24,9 +24,10 @@ public class SortString {
 				 c[i+1]=temp;
 				}
 		}
-		System.out.println(String.valueOf(c));
 		
 	}
+		System.out.println(String.valueOf(c));
+		
 		}
 
 }
