@@ -1,5 +1,6 @@
 package numbergame;
 import java.io.*;
+import java.util.HashSet;
 import java.util.*;
 public class CoronaTest {
 
@@ -24,16 +25,19 @@ public class CoronaTest {
 	public static void findResult(String s,String s2)
 	{
 		char []c = s.toCharArray();
-		char []d = s2.toCharArray();
-		int count=0;
-		for(int j=0;j<d.length;j++) {
-		for (int i=0;i<c.length;i++)
+		HashSet<Character> h = new HashSet<Character>();
+		for(int k=0;k<c.length;k++)
 		{
-			if(d[j]==c[i])
-				count++;
+		   h.add(c[k]);	
 			}
-		}
-		if(count==5)
+		char []d = s2.toCharArray();
+		HashSet<Character> h2 = new HashSet<Character>();
+		for(int k=0;k<d.length;k++)
+		{
+		   h2.add(d[k]);	
+			}
+		
+		if(h.containsAll(h2))
 			System.out.println("POSITIVE");
 		else
 		System.out.println("NEGATIVE");
